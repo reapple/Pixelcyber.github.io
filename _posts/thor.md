@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Sleek
+title: Thor HTTP Sniffer/Capture
 featured-img: sleek
 mathjax: true
 ---

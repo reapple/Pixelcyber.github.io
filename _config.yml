@@ -28,7 +28,7 @@ navigation: # Navigation links
 tagline: >
   We created awesome apps (Thor, Shu, Anubis) for you.
 
-hero_img: posts/sleek_lg.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+hero_img: posts/main_bg.png # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
 
 email: apps@pixelcyber.com # email for form submission
 
