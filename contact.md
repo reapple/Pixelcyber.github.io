@@ -4,11 +4,10 @@ title: Contact
 permalink: /contact/
 ---
 
-Welcome to contact us.
+Welcome to contact us (Chengdu Zuimei Pixel Network Technology Co., Ltd.).
 
 * email: `{{site.email}}`
-
-[email me](mailto:{{site.email}}) to contact us.
+    * [email me](mailto:{{site.email}}) to contact us.
 
 * feedback bugs: `beta@pixelcyber.com`
 

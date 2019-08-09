@@ -110,14 +110,14 @@ TCP and UDP traffic will not be sniffed.
 Anubis is for HTTP request debugging and inspecting.
 You can use it to debug/edit your API and understand HTTP request.
 
-# Request
+Request
 - Editing request in raw and struct mode
 - Support multipart/form-data or raw file
 - URL, har, p4thor exporting & importing (editing)
 - Requests replay with policy: delay, repeat, pipelining, etc
 - Pick files from Photos, File App, Resources to construct a request
 
-# Utilities
+Utilities
 - Encoding/Cryptology tools
 - HTTPS cetificate inspector
 - RegEx validator
@@ -128,7 +128,7 @@ You can use it to debug/edit your API and understand HTTP request.
 - br, gzip, deflate extracting
 - HTTP chunked body extracting
 
-# Monitor
+Monitor
 - Network state
 - Network interfaces
 - Hardware state in real-time
