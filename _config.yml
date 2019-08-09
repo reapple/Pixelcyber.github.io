@@ -6,7 +6,7 @@ description: > # Meta description of Homepage
   Thor HTTP Sniffer/Capture -
   Anubis API Debug & Inspect
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pixelcyber.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pixelcyber.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SEO PLUGIN
 # social:
@@ -46,7 +46,7 @@ service_worker: true
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge # or pygments or null
-theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
+# theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
 exclude:
   - README.md
   - node_modules
