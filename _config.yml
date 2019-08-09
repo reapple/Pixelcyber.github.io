@@ -1,10 +1,10 @@
 # SITE CONFIGURATION
 title: PixelCyber # your site title
-author: GitHub User # You :P
+# author: GitHub User # You :P
 description: > # Meta description of Homepage
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Shu Magic File Viewer
+  Thor HTTP Sniffer/Capture
+  Anubis API Debug & Inspect
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pixelcyber.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -58,7 +58,6 @@ exclude:
   - vendor
   - npm-debug.log
   - gulpfile.js
-  - sleek.jpg
 
 include: ['_pages']
 permalink: /:title/
