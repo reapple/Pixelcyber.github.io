@@ -4,11 +4,22 @@ title: Contact
 permalink: /contact/
 ---
 
-Welcome to contact us (Chengdu Zuimei Pixel Network Technology Co., Ltd.).
+Welcome to contact us (Chengdu Zuimei Pixel Network Technology Co., Ltd.). 
 
-* email: `{{site.email}}`
-    * [email me](mailto:{{site.email}}) to contact us.
+Once you send a mail to us, we'll reply to you as soon as possible.
 
-* feedback bugs: `beta@pixelcyber.com`
+##### You may send mails to us:
 
-* address: No. 5, 5th Floor, Hongyun Building Market, Chenghuangmiao Electronic Appliance Market, No. 6 Huayu Road, Jinniu District, Chengdu, Sichuan, China.
+[Business Cooperation](mailto:{{site.email}}): `{{site.email}}`
+
+
+##### Need help with apps of us?
+
+[Feedback bugs & suggestion](mailto:beta@pixelcyber.com): `beta@pixelcyber.com`
+
+
+##### Company Address
+
+Address: No. 5, 5th Floor, Hongyun Building Market, Chenghuangmiao Electronic Appliance Market, No. 6 Huayu Road, Jinniu District, Chengdu, Sichuan, China.
+
+Zip code: 610081

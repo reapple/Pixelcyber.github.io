@@ -8,7 +8,7 @@
       {% endfor %}
     </span>
   {% endif %}
-  <a href="{{ post.store_url }}">
+  <a href="{{ post.store_url }}" target="_blank">
     {% if post.featured-img %}
       <figure class="post-card__thumb">
         <img
@@ -25,7 +25,7 @@
       </figure>
     {% endif %}
   </a>
-  <a class="post-card__inner" href="{{ post.store_url }}">
+  <a class="post-card__inner" href="{{ post.store_url }}" target="_blank">
     <div class="post-card__header">
       <h2>{{ post.title | strip_html | truncate: 50 }}</h2>
       <!-- {% assign date_format = site.sleek.date_format | default: "%b %-d, %Y" %}
