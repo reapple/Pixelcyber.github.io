@@ -6,11 +6,11 @@ permalink: /support/
 
 ## FAQ for Thor
 
-### -1、Sniff HTTP traffic on other device with Thor
+### 1、Sniff HTTP traffic on other device with Thor
 
-[Sniffer Proxy FAQ](https://github.com/PixelCyber/Thor/blob/master/demo-en/proxy-en/doc.md)
+[Sniffer Proxy FAQ >](https://github.com/PixelCyber/Thor/blob/master/proxy-en/doc.md)
 
-### 0. HTTPS decryption
+### 2. HTTPS decryption
 
 #### Why need a "Thor SSL CA" certificate
 
@@ -42,22 +42,22 @@ Thor used a VPN tunnel to set up a source of HTTP traffics from both Wi-Fi and c
 All traffics sniffed by Thor stored in app local only, no records will be uploaded to remote server. (Even Thor doesn't have a remote server or something like that, it's totally a local sniffer tool.) 
 
 
-### 1. Filter in Thor
+### 3. Filter in Thor
 
-* **Session Filter**: filter you selected in homepage. It matches keywords or patterns in `Request Headers`.
-
-
-* **Packet Filter**: filter you selected in packets list. It matches keywords or patterns in `Request Headers`, `Response Headers` and `Response Body` data type.
+**Session Filter**: filter you selected in homepage. It matches keywords or patterns in `Request Headers`.
 
 
-* Export & Import
-	* **f4thor**: file type for `Session Filter` and `Packet Filter`. You can export .f4thor files and share them to anyone or import .f4thor files from someone.
+**Packet Filter**: filter you selected in packets list. It matches keywords or patterns in `Request Headers`, `Response Headers` and `Response Body` data type.
 
-	* **p4thor**: file type for Thor packet records. You can export packets as .p4thor files to backup or share to others who can import and analyze them in Thor.
 
-	* **har**: standard HTTP archive file is supported in Thor.
+**Export & Import**
+* **f4thor**: file type for `Session Filter` and `Packet Filter`. You can export .f4thor files and share them to anyone or import .f4thor files from someone.
 
-	* **cURL**: Thor can export requests as curl commands.
+* **p4thor**: file type for Thor packet records. You can export packets as .p4thor files to backup or share to others who can import and analyze them in Thor.
+
+* **har**: standard HTTP archive file is supported in Thor.
+
+* **cURL**: Thor can export requests as curl commands.
 
 
 ## FAQ for Shu
