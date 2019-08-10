@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-Welcome to contact us (Chengdu Zuimei Pixel Network Technology Co., Ltd.). 
+Welcome to contact us (Chengdu PixelCyber Network Technology Co., Ltd.). 
 
 Feel free to send us mails, we'll reply to you as soon as possible.
 
