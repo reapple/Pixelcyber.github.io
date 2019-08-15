@@ -17,9 +17,3 @@ Feel free to send us mails, we'll reply to you as soon as possible.
 
 [Feedback bugs & suggestion](mailto:beta@pixelcyber.com): `beta@pixelcyber.com`
 
-
-#### Company Address
-
-Address: No. 5, 5th Floor, Hongyun Building Market, Chenghuangmiao Electronic Appliance Market, No. 6 Huayu Road, Jinniu District, Chengdu, Sichuan, China.
-
-Zip code: 610081
