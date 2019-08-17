@@ -1,5 +1,8 @@
-## Thor FAQ
+---
+layout: raw
+---
 
+## Thor FAQ
 
 ### -1、Sniff HTTP traffic on other device with Thor
 

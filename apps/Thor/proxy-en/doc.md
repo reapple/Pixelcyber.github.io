@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 ## Sniffer Proxy FAQ
 
 Sniff and debug HTTP traffic on other devices in same LAN with Thor.

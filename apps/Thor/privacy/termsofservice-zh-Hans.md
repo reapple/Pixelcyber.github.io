@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 # Thor 服务条款
 
 欢迎您使用 Thor HTTP 抓包调试工具（以下统称 "Thor"、"本软件"），您应当阅读并遵守《Thor 服务条款》（以下 "本条款"、"本服务条款"）。
@@ -10,7 +14,7 @@
 
 本条款内容或者在线存储服务中所涉及的三方品牌及标识提及均为文字引用，与相关品牌及商标无关。
 
-本条款获取地址（[https://github.com/PixelCyber/Thor/blob/master/privacy/termsofservice-zh-Hans.md](https://github.com/PixelCyber/Thor/blob/master/privacy/termsofservice-zh-Hans.md)）
+本条款获取地址（[https://pixelcyber.github.io/apps/Thor/privacy/termsofservice-zh-Hans](https://pixelcyber.github.io/apps/Thor/privacy/termsofservice-zh-Hans)）
 
 
 ## 1、【条款的范围】

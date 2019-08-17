@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 ## Thor Debug & Analyze Tips
 
 

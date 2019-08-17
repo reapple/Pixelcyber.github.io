@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 ## Guide for Shu 
 
 

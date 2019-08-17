@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 # Thor Privacy Policy
 
 Your privacy is important to Thor. 
@@ -7,7 +11,7 @@ All traffics sniffed by Thor stored in app local only, no records will be upload
 Thor will not record or upload any user behavior statistics.
 
 
-Read it online at（[https://github.com/PixelCyber/Thor/blob/master/privacy/privacy-en.md](https://github.com/PixelCyber/Thor/blob/master/privacy/privacy-en.md)）
+Read it online at（[https://pixelcyber.github.io/apps/Thor/privacy/privacy-en](https://pixelcyber.github.io/apps/Thor/privacy/privacy-en)）
 
 
 ### What personal information we collect or access
