@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-We make awesome apps for you, particularly we created Thor, Shu and Anubis. All apps belong to "Chengdu PixelCyber Network Technology Co., Ltd.".
+We make awesome apps for you, particularly we created Thor, Shu and Anubis.
 
 
 ### [Magic File Viewer - Shu](https://itunes.apple.com/app/id1282297037)
