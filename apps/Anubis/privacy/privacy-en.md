@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 # Anubis Privacy Policy
 
 Your privacy is important to Anubis. 

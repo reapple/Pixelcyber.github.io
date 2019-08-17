@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 ## 用 Network Link Conditioner 来模拟不良网络环境
 
 `Network Link Conditioner` 可以用来精确并持续地模拟不良的网络环境，以最大程度地测试你的 App 在各种网络环境下的运作情况。（**别忘了在完成测试后把它关掉！**）

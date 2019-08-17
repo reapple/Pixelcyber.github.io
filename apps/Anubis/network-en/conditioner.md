@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 ## Use Network Link Conditioner to simulate adverse networking environments
 
 `Network Link Conditioner` allows Mac and iOS devices to accurately and consistently simulate adverse networking environments.（**just don’t forget to turn it off after you’re done testing!**）
