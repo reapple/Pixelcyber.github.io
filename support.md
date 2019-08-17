@@ -8,7 +8,7 @@ permalink: /support/
 
 ### 1、Sniff HTTP traffic on other device with Thor
 
-[Sniffer Proxy FAQ >](https://github.com/PixelCyber/Thor/blob/master/proxy-en/doc.md)
+[Sniffer Proxy FAQ >](../proxy-en/doc.md)
 
 ### 2. HTTPS decryption
 
