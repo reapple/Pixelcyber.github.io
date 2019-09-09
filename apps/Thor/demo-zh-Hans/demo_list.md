@@ -105,7 +105,7 @@ Thor 实现的 HTTPS 解析方式是 MiTM （中间人欺骗）：需要用 Thor
 
 * [越狱设备无法通过收据验证](qsa.md)
 
-* [iOS11 证书无法信任](qsa.md)
+* [HTTPS 证书无法信任](qsa.md)
 
 * [Thor 1.2.2 以后内置筛选器设置](qsa.md)
 
