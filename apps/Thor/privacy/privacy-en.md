@@ -18,9 +18,13 @@ Read it online at（[https://pixelcyber.github.io/apps/Thor/privacy/privacy-en](
 
 - Your app receipt: Thor may request an app purchased receipt validation, it request App Store to verify the legal purchase state of your app to avoid a pirated app or jailbreak device. 
 
-- Thor is a HTTP sniffer, a source of HTTP traffics will be necessary. Thor used a VPN tunnel to set up a source of HTTP traffics from both Wi-Fi and cellular of local device. All traffics just forwarded to their original destination addresses with local HTTP proxy (not any remote proxy) in Thor. You can view, delete or share the recorded traffic data as you need. Data will not upload anywhere, it's just stored in app local under your full control.
+- Thor is a HTTP sniffer, a source of HTTP traffic will be necessary. Thor used a VPN tunnel to set up a source of HTTP traffic from both Wi-Fi and cellular of local device (Local, LAN, Internet access). All traffic just forwarded to their original destination addresses with local HTTP proxy (not any remote proxy) in Thor. You can view, delete or share the recorded traffic data as you need. Data will not be uploaded anywhere, it's just stored in app local under your full control.
 
 - Thor will ask you for album accesssing, when you save data to album.
+
+- Thor will detect once the pasteboard to match a regular input or prompt you automatically, when you begin editing input in some pages of App.
+
+- Thor will write data to pasteboard when you share/open data to other Apps with the pasteboard option.
 
 
 Thor may update its Privacy Policy from time to time. When we change the policy in a material way, a notice will be posted in app along with the updated Privacy Policy.

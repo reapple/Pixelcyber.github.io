@@ -2,9 +2,9 @@
 layout: raw
 ---
 
-## Thor 网络调试技巧
+## Thor HTTP 网络开发调试技巧
 
-Thor 并非万能，只工作在系统 HTTP 层: 不支持非 HTTP 流量(TCP, UDP)及不经过系统 HTTP 代理的流量
+Thor 并非万能，只工作在系统 HTTP 层: 不支持非 HTTP 流量(TCP, UDP)及不经过系统 HTTP 代理的流量。
 
 ### 抓包技巧
 
