@@ -13,9 +13,9 @@ layout: raw
 
 Entries:
 
-* Swipe a file item > More > `Auto Group`
+* Swipe a file item / ContextMenu > More > `Auto Group`
 
-* Enter a folder > Edit > `Auto Group`
+* Open a folder > Edit > `Auto Group`
 
 
 #### File extracting
@@ -26,23 +26,30 @@ Entries:
 * File system: ntfs, fat, mbr, gpt, hfs, sfs
 * Package: deb, rpm, crx, xpi, ar, PE file, ELF file, com file
 * E-book, office documents, pdf, sketch
-* Extract frames of tiff, icns, gif, apng, webp
+* Extract frames from tiff, icns, gif, apng, webp, bpg
 
 
 #### File converting
 
+* Export Live Photo as zip: preview Live Photo in Shu > edit menu > Export as zip
+* Live Photo > gif, video
+* video > gif/webp/apng/Live Photo
+* jpg, png, webp, gif, tiff convert to each other
+* video conversion between mp4, mov, m4v, 3gp
+* audio conversion between m4a, wav, mp3, caf, flac
+* tgs > gif/webp/apng
 * Export text file with different string encoding: GBK, UTF-8, UTF-16...
 * Certificate format conversion (der, pem, p12, base64)
-* ipynb/markdown -> html
-* djvu -> jpg
+* ipynb/markdown > html
+* djvu > jpg
 * xml, json, plist, yaml convert to each other
-* ps/eps -> pdf
+* ps/eps > pdf
 
 
 
 ### File Sharing
 
-#### Mac/PC/Another Device <-> Shu
+#### Mac/PC/other Device <-> Shu
 
 * iTunes File Sharing: better performance for huge files.
 `Go to: Mac/PC > iTunes > Your iOS device > File Sharing > Apps > Shu`
@@ -76,7 +83,7 @@ Entries:
 
 ### HTTP downloading
 
-* Detect download url in pasteboard automatically.
+* Detect download links in pasteboard automatically.
 
 * Copy links in other apps > then launch Shu 
 
