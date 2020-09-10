@@ -22,7 +22,7 @@ Read it online at（[https://pixelcyber.github.io/apps/Anubis/privacy/privacy-en
 
 - Anubis will ask you for album accesssing, when you read data from album to build a request.
 
-- Anubis will ask you for Local Network accessing, when you build a API with destination of Local Network.
+- Anubis will ask you for Local Network accessing, when you build  APIs with destination of Local Network.
 
 - Anubis will detect once the pasteboard to match a regular input or prompt you automatically, when you begin editing input in some pages of App.
 
