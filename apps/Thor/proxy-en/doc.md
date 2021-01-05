@@ -55,21 +55,21 @@ Certificates between devices or users are different.
 
 #### macOS
 
-Export "Thor SSL CA" certificate (.der) to mac, then install and trust it in Keychain app.
+Export "Thor SSL CA" certificate (.cer) to mac, then install and trust it in Keychain app.
 
 Double click "Thor SSL CA" on macOS > Find it in Keychain > Get Info > Always Trust.
 
 
 #### Windows
 
-Export "Thor SSL CA" certificate (.der) to Windows, then install and trust it in ` Trusted Root Certification Authorities store`.
+Export "Thor SSL CA" certificate (.cer) to Windows, then install and trust it in ` Trusted Root Certification Authorities store`.
 
 
 #### iOS Device
 
-* Send a email with "Thor SSL CA" certificate (.der) attatched of Thor to target iOS device's Mail app, then tap attatchment in mail in target device, install and trust it in iOS system.
+* Send an email with "Thor SSL CA" certificate (.cer) attatched of Thor to target iOS device's Mail app, then tap attatchment in mail in target device, install and trust it in iOS system.
 
-* Export "Thor SSL CA" certificate (.der) to target device and save it to File app > iCloud Driver, then install it in iCloud Driver of File app.
+* Export "Thor SSL CA" certificate (.cer) to target device and save it to File app > iCloud Driver, then install it in iCloud Driver of File app.
 
 
 <!-- #### Android Device -->

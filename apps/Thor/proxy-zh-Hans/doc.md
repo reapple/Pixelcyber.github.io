@@ -57,7 +57,7 @@ Thor 需要 Thor SSL CA 证书，才能以 MiTM 方式解析 HTTPS 流量。
 
 #### 如何导出 Thor SSL CA 证书
 
-打开 Thor > 更多 > HTTPS 解析设置 > 点击证书进入详情 > 右上角分享 > 选择导出的格式（der 或者 pem 文件皆可）> 选取导出的方式
+打开 Thor > 更多 > HTTPS 解析设置 > 点击证书进入详情 > 右上角分享 > 选择导出的格式（cer 或者 pem 文件皆可）> 选取导出的方式
 
 
 有 Shu 的用户可以把 Thor SSL CA 证书导入 Shu，然后放到 Shu 的共享目录，打开 WiFi 共享，在待抓包的目标设备浏览器中打开 Shu 的 WiFi 共享地址，然后点击下载导入的 Thor SSL CA 证书，并安装在目标设备上。
@@ -68,23 +68,23 @@ Thor 需要 Thor SSL CA 证书，才能以 MiTM 方式解析 HTTPS 流量。
 
 #### macOS 系统
 
-从 Thor 中导出 "Thor SSL CA" 证书 (.der) 到 mac。
+从 Thor 中导出 "Thor SSL CA" 证书 (.cer) 到 mac。
 
 双击或拖拽证书到钥匙串安装 > 在钥匙串中找到 > 显示简介 > 选择始终信任
 
 
 #### Windows 系统
 
-从 Thor 中导出 "Thor SSL CA" 证书 (.der) 到 Windows。
+从 Thor 中导出 "Thor SSL CA" 证书 (.cer) 到 Windows。
 
 双击安装 > 选择“将所有的证书放入下列存储”，再点“浏览” > 选择“受信任的根证书颁发机构”，点确定 > 下一步，完成 > 在弹出的警告对话框中点“是”
 
 
 #### iOS 设备
 
-* 系统邮箱安装：从 Thor 中导出 "Thor SSL CA" 证书 (.der) 选择邮件发送到目标设备 > 在目标设备的系统邮箱中收件，并点击附件安装。
+* 系统邮箱安装：从 Thor 中导出 "Thor SSL CA" 证书 (.cer) 选择邮件发送到目标设备 > 在目标设备的系统邮箱中收件，并点击附件安装。
 
-* 系统文件应用安装：从 Thor 中导出 "Thor SSL CA" 证书 (.der) 并发送到目标设备 > 在目标设备中保存证书到系统文件应用，iCloud 云盘中 > 打开系统文件应用，找到云盘中的证书 > 点击安装。
+* 系统文件应用安装：从 Thor 中导出 "Thor SSL CA" 证书 (.cer) 并发送到目标设备 > 在目标设备中保存证书到系统文件应用，iCloud 云盘中 > 打开系统文件应用，找到云盘中的证书 > 点击安装。
 
 	注：iOS 10 以后系统在证书安装后，是已验证状态，并非已信任，需要在『系统设置 > 通用 > 关于本机 > 证书信任设置』信任。
 
@@ -92,7 +92,7 @@ Thor 需要 Thor SSL CA 证书，才能以 MiTM 方式解析 HTTPS 流量。
 
 #### Mozilla Firefox 浏览器
 
-从 Thor 中导出 "Thor SSL CA" 证书 (.der) 到电脑。
+从 Thor 中导出 "Thor SSL CA" 证书 (.cer) 到电脑。
 
 由于 Firefox 浏览器自己有一套证书管理的系统，所以我们需要单独为 Firefox 浏览器导入证书。
 
