@@ -11,7 +11,7 @@ All files open in Shu were stored in app local only, no data will be uploaded to
 Shu will not record or upload any user behavior statistics.
 
 
-Read it online at（[https://pixelcyber.github.io/apps/Shu/privacy/privacy-en](https://pixelcyber.github.io/apps/Shu/privacy/privacy-en)）
+Read it online at（[https://pixelcyber.github.io/apps/Shu/privacy/privacy-en/](https://pixelcyber.github.io/apps/Shu/privacy/privacy-en/)）
 
 
 ### What personal information we collect or access

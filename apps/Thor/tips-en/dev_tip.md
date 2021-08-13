@@ -16,7 +16,7 @@ layout: raw
 
 ### Develop & Debug tips
 
-* Set HTTP proxy with Thor proxy address like `127.0.0.1:8423` in your source code to debug traffic.
+* Set HTTP proxy with Thor proxy address like `localhost:8423` in your source code to debug traffic.
 
 * Set a keyword field in HTTP Head to identify requests, then filter this keyword with `Session Filter` in Thor.
 
@@ -35,4 +35,4 @@ layout: raw
 
 * `.p4thor` -> `.har`: import `.p4thor` with Thor, then export it as `.har`.
 
-* `.har` standardized: .har file can be standardized by importing to Thor and then exporting a new one.
+* `.har` standardized: .har file can be standardized by importing to Thor, then exporting a new one.

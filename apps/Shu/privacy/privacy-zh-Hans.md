@@ -9,7 +9,7 @@ Shu 非常重视您的隐私。所有使用产生的数据只会存储在设备�
 
 本文内容或者在线存储服务中所涉及的三方品牌及标识提及均为文字引用，与相关品牌及商标无关。
 
-在线查看地址（[https://pixelcyber.github.io/apps/Shu/privacy/privacy-zh-Hans](https://pixelcyber.github.io/apps/Shu/privacy/privacy-zh-Hans)）
+在线查看地址（[https://pixelcyber.github.io/apps/Shu/privacy/privacy-zh-Hans/](https://pixelcyber.github.io/apps/Shu/privacy/privacy-zh-Hans/)）
 
 
 ### 我们收集或者访问哪些个人信息

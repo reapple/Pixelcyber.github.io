@@ -72,7 +72,9 @@ Export "Thor SSL CA" certificate (.cer) to Windows, then install and trust it in
 * Export "Thor SSL CA" certificate (.cer) to target device and save it to File app > iCloud Driver, then install it in iCloud Driver of File app.
 
 
-<!-- #### Android Device -->
+#### Android Device
+
+Export "Thor SSL CA" certificate (.p12 or .pem) to Android device, install & trust it.
 
 
 #### Mozilla Firefox

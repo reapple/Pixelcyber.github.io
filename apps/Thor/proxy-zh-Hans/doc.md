@@ -88,7 +88,11 @@ Thor 需要 Thor SSL CA 证书，才能以 MiTM 方式解析 HTTPS 流量。
 
 	注：iOS 10 以后系统在证书安装后，是已验证状态，并非已信任，需要在『系统设置 > 通用 > 关于本机 > 证书信任设置』信任。
 
-<!-- #### Android Device -->
+
+#### Android 设备
+
+从 Thor 中导出 "Thor SSL CA" 证书 (.p12 或者 .pem) 到设备进行安装。
+
 
 #### Mozilla Firefox 浏览器
 

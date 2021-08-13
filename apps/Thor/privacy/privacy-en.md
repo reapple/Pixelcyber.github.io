@@ -11,7 +11,7 @@ All traffics sniffed by Thor stored in app local only, no records will be upload
 Thor will not record or upload any user behavior statistics.
 
 
-Read it online at（[https://pixelcyber.github.io/apps/Thor/privacy/privacy-en](https://pixelcyber.github.io/apps/Thor/privacy/privacy-en)）
+Read it online at（[https://pixelcyber.github.io/apps/Thor/privacy/privacy-en/](https://pixelcyber.github.io/apps/Thor/privacy/privacy-en/)）
 
 
 ### What personal information we collect or access

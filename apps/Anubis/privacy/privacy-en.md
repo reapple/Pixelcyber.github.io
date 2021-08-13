@@ -11,7 +11,7 @@ All data generated in Anubis were stored in app local only, no data will be uplo
 Anubis will not record or upload any user behavior statistics.
 
 
-Read it online at（[https://pixelcyber.github.io/apps/Anubis/privacy/privacy-en](https://pixelcyber.github.io/apps/Anubis/privacy/privacy-en)）
+Read it online at（[https://pixelcyber.github.io/apps/Anubis/privacy/privacy-en/](https://pixelcyber.github.io/apps/Anubis/privacy/privacy-en/)）
 
 
 ### What personal information we collect or access
