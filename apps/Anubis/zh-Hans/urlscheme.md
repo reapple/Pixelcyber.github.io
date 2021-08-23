@@ -1,3 +1,7 @@
+---
+layout: raw
+---
+
 # URL Scheme
 
 ### 1. 基本格式 (x-callback-url)
