@@ -4,57 +4,57 @@ layout: raw
 
 # Anubis URL Scheme
 
-### 1. 基本格式 (x-callback-url)
+### 1. Basic format (x-callback-url)
 
-query string 的每个字段值都应该单独进行 Encode URL Compoent 编码，这里为了可读性，展示时均未编码。
+*Fields in query string are not encoded with `Encode URL Compoent` for readable purpose, as below.*
 
 ```js
 anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://other.app.url&x-success=xx://other.app.url/path?input=$output
 ```
 
-**$module**: 功能路径，如正则小工具 `tools/regex`
+**`$module`**: feature path, e.g. `tools/regex`
 
-**$input**: 传给 Anubis 处理的数据
+**`$input`**: the income data for Anubis to process.
 ```json
 {"text": "some text", "pbFileName": "xx.txt", "pbName": ""}
 ```
-- `text`: 通过 URL 传递的文本，这时可忽略下面两个字段
-- `pbFileName`: 当文本过长或者不是文本时，可以通过系统剪贴板传递文件，此为传递的文件名
-- `pbName`: 传递文件的剪贴板名称，默认填空字符串`""`，即为系统默认剪贴板。当透过剪贴板传递的是文本，而不是文件时，可省略 `pbFileName` 和 `text` 字段，只表达为 `{"pbName": ""}`
+- `text`: text/string passed through URL. The following two fields should be ignored, if `text` is not empty.
+- `pbFileName`: file name for the file passed with Pasteboard.
+- `pbName`: name of the Pasteboard. Empty name with `""` is for the system general Pasteboard. Passed a `pbName` with `""` When you passed a string with Pasteboard, like `{"pbName": ""}`.
 
-**\$output**: Anubis 处理后回传的结果数据，以 `input=$output` 的方式附加到 `x-success` 的 query string 中，数据结构同 `$input`
+**`$output`**: the result processed by Anubis, will be appended as `input=$output` to query string of `x-success`. (`$output` has same structure as `$input`).
 
 
-### 2. 小工具调用
+### 2. Utilities
 
-#### 小工具列表
+#### tool list
 ```js
 anubis://x-callback-url/tools/?input=$input
 ```
 
-#### 正则调试
+#### RegEx Validator
 ```js
-anubis://x-callback-url/tools/regex?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "reg": "cd", "case": true, "global": false, "replace": "00"}
+anubis://x-callback-url/tools/regex?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "reg": "^abc", "case": true, "global": false, "replace": "00"}
 ```
 
-**$input**: 除了基本格式中的字段外，对于正则配置还有以下参数 
-- `reg`: 正则表达式语句
-- `replace`: 替换值文本
-- `case`: true 忽略大小写，默认为 false
-- `global`: 全局搜索，默认为 true
+**$input**: has extra fields than basic format as below:
+- `reg`: regular expression
+- `replace`: replacement
+- `case`: true is case insensitive，default: false
+- `global`: global search, default: true
 
 
-#### SSL 证书查看
+#### SSL Certificate Inspector
 ```js
 anubis://x-callback-url/tools/ssl?input=$input
 ```
 
-#### 日期格式化
+#### Date Formmatter
 ```js
 anubis://x-callback-url/tools/date?input=$input
 ```
 
-#### UUID 生成
+#### UUID Generator
 ```js
 anubis://x-callback-url/tools/uuid?input=$input
 ```
@@ -63,18 +63,19 @@ anubis://x-callback-url/tools/uuid?input=$input
 ```js
 anubis://x-callback-url/tools/base64?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
+  
 
 #### URL Encode
 ```js
 anubis://x-callback-url/tools/urlencode?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false, "component": false, "multiLine": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
-- `component`: 对解码无意义，true 为 `Encode URL Compoent`, 默认 false，可不填
-- `multiLine`: 对输入文本按行分别编码, 默认 false, 可不填
+- `decode`: optional, true for decode, false for encode, default: false
+- `component`: optional, encode only, true for `Encode URL Compoent`, default: false
+- `multiLine`: optional, encode/decode line by line, default: false
 
 
-#### 文本字符编码转换: 如 gbk -> utf-8
+#### String Encoding: e.g. gbk -> utf-8
 ```js
 anubis://x-callback-url/tools/stringEncode?input=$input
 ```
@@ -83,48 +84,48 @@ anubis://x-callback-url/tools/stringEncode?input=$input
 ```js
 anubis://x-callback-url/tools/native2ascii?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false, "ignoreASC": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
-- `ignoreASC`: 对解码无意义，true 忽略 ascii 字符，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
+- `ignoreASC`: optional, encode only, true: ignore ascii characters, default: false
 
 
-#### 数据转十六进制字符
+#### Data to Hex
 ```js
 anubis://x-callback-url/tools/date2hex?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
   
 
-#### 字符串转义
+#### String Escaping
 ```js
 anubis://x-callback-url/tools/stringEscape?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false, "regex": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
-- `regex`: true 正则表达式标准，false 字符串标准，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
+- `regex`: optional, true for regular expression，false for string, default: false
   
 
-#### HTML 转义
+#### HTML Escaping
 ```js
 anubis://x-callback-url/tools/htmlEscape?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false, "ascii": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
-- `ascii`: 对解码无意义，true ascii 字符也被编码，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
+- `ascii`: optional, encode only，true: ascii characters will be encoded, default: false
   
 
-#### IDN 域名编码
+#### IDN (Punnycode)
 ```js
 anubis://x-callback-url/tools/punnycode?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
   
 
 #### Quoted-printable
 ```js
 anubis://x-callback-url/tools/quotedPrintable?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "decode": false}
 ```
-- `decode`: true 解码，false 编码，默认 false，可不填
+- `decode`: optional, true for decode, false for encode, default: false
   
 
-#### 散列/哈希
+#### MD5, SHA, CRC
 ```js
 anubis://x-callback-url/tools/hash?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "MD5"}
 ```
@@ -136,40 +137,40 @@ anubis://x-callback-url/tools/hash?input={"text": "some text", "pbFileName": "xx
 anubis://x-callback-url/tools/hashSalt?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "HmacMD5", "salt": "xxx"}
 ```
 - `alg`: `HmacMD5, HmacSHA1, HmacSHA224, NSString.hash, SHA1, SHA224, SHA256, SHA384, SHA512`
-- `salt`: Hmac 的 key，选填
+- `salt`: optional, the input key of Hmac
 
 
-#### 基础加密
+#### Basic Cryptology
 ```js
 anubis://x-callback-url/tools/crypto?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "AES128", "key": "xxx", "ivHex": "", "mode": "CBC", "decrypt": false}
 ```
 - `alg`: `AES128, AES192, AES256, DES, 3DES, RC4, RC2, Blowfish, Cast-128`
-- `key`: 密钥文本
-- `keyHex`: 十六进制密钥
-- `ivHex`: 十六进制向量
-- `mode`: `CBC, ECB, CTR, CFB, CFB8, NOFB`，其中 `ECB` 不支持 `ivHex`
-- `decrypt`: true 解密，false 加密，默认 false，可不填
+- `key`: key text
+- `keyHex`: hex string for key
+- `ivHex`: hex string for iv
+- `mode`: `CBC, ECB, CTR, CFB, CFB8, NOFB`. (`ECB` has no `ivHex`)
+- `decrypt`: optional, true for decrypt，false for encrypt, default: false
 
-| 算法 / 长度 (byte) | key | iv | block |
+| Algorithm / length (byte) | key | iv | block |
 |:-------|:----|:----|:----|
-| `AES128` | 16 | 16 | 16 |
-| `AES192` | 24 | 16 | 16 |
-| `AES256` | 32 | 16 | 16 |
-| `DES` | 8 | 8 | 8 |
-| `3DES` | 24 | 8 | 8 |
-| `RC4` | 1~512 | - | - |
-| `RC2` | 1~128 | 8 | 8 |
-| `Blowfish` | 8~56 | 8 | 8 |
-| `Cast-128` | 5~16 | 8 | 8 |
+| AES128 | 16 | 16 | 16 |
+| AES192 | 24 | 16 | 16 |
+| AES256 | 32 | 16 | 16 |
+| DES | 8 | 8 | 8 |
+| 3DES | 24 | 8 | 8 |
+| RC4 | 1~512 | - | - |
+| RC2 | 1~128 | 8 | 8 |
+| Blowfish | 8~56 | 8 | 8 |
+| Cast-128 | 5~16 | 8 | 8 |
 
 
-#### Crypto.js 兼容加密
+#### Crypto.js
 ```js
 anubis://x-callback-url/tools/crypto.js?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "AES128", "pwd": "xxx", "decrypt": false}
 ```
 - `alg`: `AES256, DES, 3DES, RC4`
-- `pwd`: 密码
-- `decrypt`: true 解密，false 加密，默认 false，可不填
+- `pwd`: password
+- `decrypt`: optional, true for decrypt，false for encrypt, default: false
 
 
 #### gzip, br, deflate
@@ -177,10 +178,10 @@ anubis://x-callback-url/tools/crypto.js?input={"text": "some text", "pbFileName"
 anubis://x-callback-url/tools/streamCompress?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "gzip", "extract": false}
 ```
 - `alg`: `gzip, br, deflate`
-- `extract`: true 解压，false 压缩，默认 false，可不填
+- `extract`:  optional, true for extract, false for compress, default: false
 
 
-#### HTTP chunked 提取
+#### HTTP chunked extract
 ```js
 anubis://x-callback-url/tools/chunked?input=$input
 ```

@@ -6,15 +6,15 @@ layout: raw
 
 ### 1. 基本格式 (x-callback-url)
 
-query string 的每个字段值都应该单独进行 Encode URL Compoent 编码，这里为了可读性，展示时均未编码。
+*query string 的每个字段值都应该单独进行 Encode URL Compoent 编码，这里为了可读性，展示时均未编码。*
 
 ```js
 anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://other.app.url&x-success=xx://other.app.url/path?input=$output
 ```
 
-**$module**: 功能路径，如正则小工具 `tools/regex`
+**`$module`**: 功能路径，如正则小工具 `tools/regex`
 
-**$input**: 传给 Anubis 处理的数据
+**`$input`**: 传给 Anubis 处理的数据
 ```json
 {"text": "some text", "pbFileName": "xx.txt", "pbName": ""}
 ```
@@ -22,7 +22,7 @@ anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://ot
 - `pbFileName`: 当文本过长或者不是文本时，可以通过系统剪贴板传递文件，此为传递的文件名
 - `pbName`: 传递文件的剪贴板名称，默认填空字符串`""`，即为系统默认剪贴板。当透过剪贴板传递的是文本，而不是文件时，可省略 `pbFileName` 和 `text` 字段，只表达为 `{"pbName": ""}`
 
-**\$output**: Anubis 处理后回传的结果数据，以 `input=$output` 的方式附加到 `x-success` 的 query string 中，数据结构同 `$input`
+**`$output`**: Anubis 处理后回传的结果数据，以 `input=$output` 的方式附加到 `x-success` 的 query string 中，数据结构同 `$input`
 
 
 ### 2. 小工具调用
@@ -34,7 +34,7 @@ anubis://x-callback-url/tools/?input=$input
 
 #### 正则调试
 ```js
-anubis://x-callback-url/tools/regex?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "reg": "cd", "case": true, "global": false, "replace": "00"}
+anubis://x-callback-url/tools/regex?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "reg": "^abc", "case": true, "global": false, "replace": "00"}
 ```
 
 **$input**: 除了基本格式中的字段外，对于正则配置还有以下参数 
@@ -71,7 +71,7 @@ anubis://x-callback-url/tools/urlencode?input={"text": "some text", "pbFileName"
 ```
 - `decode`: true 解码，false 编码，默认 false，可不填
 - `component`: 对解码无意义，true 为 `Encode URL Compoent`, 默认 false，可不填
-- `multiLine`: 对输入文本按行分别编码, 默认 false, 可不填
+- `multiLine`: 对输入文本按行分别编码，默认 false，可不填
 
 
 #### 文本字符编码转换: 如 gbk -> utf-8
