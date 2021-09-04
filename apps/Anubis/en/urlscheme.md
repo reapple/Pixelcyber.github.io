@@ -9,7 +9,12 @@ layout: raw
 *Fields in query string are not encoded with `Encode URL Compoent` for readable purpose, as below.*
 
 ```js
-anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://other.app.url&x-success=xx://other.app.url/path?input=$output
+anubis://x-callback-url/$module?input=$input
+&gui=1
+&x-source=sourceApp
+&x-cancel=xx://other.app.url
+&x-success=xx://other.app.url/path?input=$output
+&x-error=xx://other.app.url/path?errorCode=code&errorMessage=message
 ```
 
 **`$module`**: feature path, e.g. `tools/regex`
@@ -23,6 +28,7 @@ anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://ot
 - `pbName`: name of the Pasteboard. Empty name with `""` is for the system general Pasteboard. Passed a `pbName` with `""` When you passed a string with Pasteboard, like `{"pbName": ""}`.
 
 **`$output`**: the result processed by Anubis, will be appended as `input=$output` to query string of `x-success`. (`$output` has same structure as `$input`).
+**`gui`**: optional, 1 for GUI mode, 0 for process in background, then callback with `x-success` or `x-error`, default: 0
 
 
 ### 2. Utilities
@@ -56,7 +62,7 @@ anubis://x-callback-url/tools/date?input=$input
 
 #### UUID Generator
 ```js
-anubis://x-callback-url/tools/uuid?input=$input
+anubis://x-callback-url/tools/uuid
 ```
 
 #### Base64

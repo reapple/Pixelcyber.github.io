@@ -9,7 +9,12 @@ layout: raw
 *query string 的每个字段值都应该单独进行 Encode URL Compoent 编码，这里为了可读性，展示时均未编码。*
 
 ```js
-anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://other.app.url&x-success=xx://other.app.url/path?input=$output
+anubis://x-callback-url/$module?input=$input
+&gui=1
+&x-source=sourceApp
+&x-cancel=xx://other.app.url
+&x-success=xx://other.app.url/path?input=$output
+&x-error=xx://other.app.url/path?errorCode=code&errorMessage=message
 ```
 
 **`$module`**: 功能路径，如正则小工具 `tools/regex`
@@ -23,6 +28,7 @@ anubis://x-callback-url/$module?input=$input&x-source=sourceApp&x-cancel=xx://ot
 - `pbName`: 传递文件的剪贴板名称，默认填空字符串`""`，即为系统默认剪贴板。当透过剪贴板传递的是文本，而不是文件时，可省略 `pbFileName` 和 `text` 字段，只表达为 `{"pbName": ""}`
 
 **`$output`**: Anubis 处理后回传的结果数据，以 `input=$output` 的方式附加到 `x-success` 的 query string 中，数据结构同 `$input`
+**`gui`**: 1: 以界面交互方式打开 0: 无界面处理后 `x-success` 或 `x-error` 回调, 默认 0，可不填
 
 
 ### 2. 小工具调用
@@ -56,7 +62,7 @@ anubis://x-callback-url/tools/date?input=$input
 
 #### UUID 生成
 ```js
-anubis://x-callback-url/tools/uuid?input=$input
+anubis://x-callback-url/tools/uuid
 ```
 
 #### Base64
