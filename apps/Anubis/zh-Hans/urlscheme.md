@@ -28,7 +28,8 @@ anubis://x-callback-url/$module?input=$input
 - `pbName`: 传递文件的剪贴板名称，默认填空字符串`""`，即为系统默认剪贴板。当透过剪贴板传递的是文本，而不是文件时，可省略 `pbFileName` 和 `text` 字段，只表达为 `{"pbName": ""}`
 
 **`$output`**: Anubis 处理后回传的结果数据，以 `input=$output` 的方式附加到 `x-success` 的 query string 中，数据结构同 `$input`
-**`gui`**: 1: 以界面交互方式打开 0: 无界面处理后 `x-success` 或 `x-error` 回调, 默认 0，可不填
+
+**`gui`**: 1: 以界面交互方式打开, 0: 无界面处理后 `x-success` 或 `x-error` 回调, 默认 0，可不填
 
 
 ### 2. 小工具调用
