@@ -28,7 +28,8 @@ anubis://x-callback-url/$module?input=$input
 - `pbName`: name of the Pasteboard. Empty name with `""` is for the system general Pasteboard. Passed a `pbName` with `""` When you passed a string with Pasteboard, like `{"pbName": ""}`.
 
 **`$output`**: the result processed by Anubis, will be appended as `input=$output` to query string of `x-success`. (`$output` has same structure as `$input`).
-**`gui`**: optional, 1 for GUI mode, 0 for process in background, then callback with `x-success` or `x-error`, default: 0
+
+**`gui`**: optional, 1 for GUI mode, 0 for process in background, then callback with `x-success` or `x-error`, default: 0.
 
 
 ### 2. Utilities
@@ -46,8 +47,8 @@ anubis://x-callback-url/tools/regex?input={"text": "some text", "pbFileName": "x
 **$input**: has extra fields than basic format as below:
 - `reg`: regular expression
 - `replace`: replacement
-- `case`: true is case insensitive，default: false
-- `global`: global search, default: true
+- `case`: optional, true is case insensitive，default: false
+- `global`: optional, global search, default: true
 
 
 #### SSL Certificate Inspector

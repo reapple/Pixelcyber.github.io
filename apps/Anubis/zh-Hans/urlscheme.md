@@ -29,7 +29,7 @@ anubis://x-callback-url/$module?input=$input
 
 **`$output`**: Anubis 处理后回传的结果数据，以 `input=$output` 的方式附加到 `x-success` 的 query string 中，数据结构同 `$input`
 
-**`gui`**: 1: 以界面交互方式打开, 0: 无界面处理后 `x-success` 或 `x-error` 回调, 默认 0，可不填
+**`gui`**: 1: 以界面交互方式打开, 0: 无界面处理后 `x-success` 或 `x-error` 回调，默认 0，可不填
 
 
 ### 2. 小工具调用
@@ -47,8 +47,8 @@ anubis://x-callback-url/tools/regex?input={"text": "some text", "pbFileName": "x
 **$input**: 除了基本格式中的字段外，对于正则配置还有以下参数 
 - `reg`: 正则表达式语句
 - `replace`: 替换值文本
-- `case`: true 忽略大小写，默认为 false
-- `global`: 全局搜索，默认为 true
+- `case`: true 忽略大小写，默认为 false，可不填
+- `global`: 全局搜索，默认为 true，可不填
 
 
 #### SSL 证书查看
