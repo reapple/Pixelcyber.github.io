@@ -9,7 +9,8 @@ layout: raw
 *query string 的每个字段值都应该单独进行 Encode URL Compoent 编码，这里为了可读性，展示时均未编码。*
 
 ```js
-anubis://x-callback-url/$module?input=$input
+anubis://x-callback-url/$module
+?input=$input
 &gui=1
 &x-source=sourceApp
 &x-cancel=xx://other.app.url
@@ -133,17 +134,20 @@ anubis://x-callback-url/tools/quotedPrintable?input={"text": "some text", "pbFil
 
 #### 散列/哈希
 ```js
-anubis://x-callback-url/tools/hash?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "MD5"}
+anubis://x-callback-url/tools/hash?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "MD5", "multiLine": true, "upper": true}
 ```
-- `alg`: `MD5, MD4, MD3, NSString.hash, SHA1, SHA224, SHA256, SHA384, SHA512, CRC32, CRC32B, Adler32`
-  
+- `alg`: `MD5, MD4, MD3, SHA1, SHA224, SHA256, SHA384, SHA512, CRC32, CRC32B, Adler32, NSString.hash`
+- `upper`: true 输出大写，false 输出小写，默认 false，可不填
+- `multiLine`: 对输入文本按行分别哈希，默认 false，可不填
 
 #### Hmac
 ```js
-anubis://x-callback-url/tools/hashSalt?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "HmacMD5", "salt": "xxx"}
+anubis://x-callback-url/tools/hashSalt?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "HmacMD5", "salt": "xxx", "multiLine": true, "upper": true}
 ```
-- `alg`: `HmacMD5, HmacSHA1, HmacSHA224, NSString.hash, SHA1, SHA224, SHA256, SHA384, SHA512`
+- `alg`: `HmacMD5, HmacSHA1, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512`
 - `salt`: Hmac 的 key，选填
+- `upper`: true 输出大写，false 输出小写，默认 false，可不填
+- `multiLine`: 对输入文本按行分别哈希，默认 false，可不填
 
 
 #### 基础加密

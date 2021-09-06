@@ -9,7 +9,8 @@ layout: raw
 *Fields in query string are not encoded with `Encode URL Compoent` for readable purpose, as below.*
 
 ```js
-anubis://x-callback-url/$module?input=$input
+anubis://x-callback-url/$module
+?input=$input
 &gui=1
 &x-source=sourceApp
 &x-cancel=xx://other.app.url
@@ -134,17 +135,21 @@ anubis://x-callback-url/tools/quotedPrintable?input={"text": "some text", "pbFil
 
 #### MD5, SHA, CRC
 ```js
-anubis://x-callback-url/tools/hash?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "MD5"}
+anubis://x-callback-url/tools/hash?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "MD5", "multiLine": true, "upper": true}
 ```
-- `alg`: `MD5, MD4, MD3, NSString.hash, SHA1, SHA224, SHA256, SHA384, SHA512, CRC32, CRC32B, Adler32`
+- `alg`: `MD5, MD4, MD3, SHA1, SHA224, SHA256, SHA384, SHA512, CRC32, CRC32B, Adler32, NSString.hash`
+- `upper`: optional, true for output as upper，false for output as lower, default: false
+- `multiLine`: optional, hash line by line, default: false
   
 
 #### Hmac
 ```js
-anubis://x-callback-url/tools/hashSalt?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "HmacMD5", "salt": "xxx"}
+anubis://x-callback-url/tools/hashSalt?input={"text": "some text", "pbFileName": "xx.txt", "pbName": "", "alg": "HmacMD5", "salt": "xxx", "multiLine": true, "upper": true}
 ```
-- `alg`: `HmacMD5, HmacSHA1, HmacSHA224, NSString.hash, SHA1, SHA224, SHA256, SHA384, SHA512`
+- `alg`: `HmacMD5, HmacSHA1, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512`
 - `salt`: optional, the input key of Hmac
+- `upper`: optional, true for output as upper，false for output as lower, default: false
+- `multiLine`: optional, hash line by line, default: false
 
 
 #### Basic Cryptology
