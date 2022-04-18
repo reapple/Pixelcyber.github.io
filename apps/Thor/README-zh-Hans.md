@@ -19,9 +19,6 @@ Thor - iOS 端强力专业的 HTTPS 抓包分析 & 开发调试利器
 
 [Product Hunt 应用主页](https://www.producthunt.com/posts/thor)
 
-
-<!-- 欢迎大家交流讨论抓包技巧：[官推](https://twitter.com/thor_pixelcyber)、[tg 群](https://t.me/thorshu)、[tg 频道](https://t.me/thornotice) -->
-
 * [使用技巧 >>](tips-zh-Hans/dev_tip.md)
 * [常见问题 >>](demo-zh-Hans/demo_list.md)
 
@@ -60,7 +57,7 @@ Thor - iOS 端强力专业的 HTTPS 抓包分析 & 开发调试利器
 - 独创的过滤器筛选技术（f4thor），让你一键得到目标数据
 ```
 得益于 Thor 灵活全面的过滤器和筛选器配置规则，数据过滤和数据分析从未如此简单
-导出自己的过滤器配置，抓包数据，共享工作成果，让小白也能享受到他人精心配置的过滤器
+导出自己的过滤器配置，抓包数据，与同事对接和共享工作成果
 ```
 [过滤器管理及导出导入，如图](res/sessin_filter_export.jpg)
 

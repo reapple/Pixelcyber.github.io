@@ -21,10 +21,7 @@ Read in other language:
 [**FAQ >>**](demo-en/demo_list.md)
 
 
-### Apply for a free trial in TestFlight
-
-- [https://testflight.apple.com/join/mDz0E3vO](https://testflight.apple.com/join/mDz0E3vO)
-
+<!-- ### Apply for a free trial in TestFlight -->
 
 ### Summary
 
